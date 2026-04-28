@@ -4,10 +4,13 @@
 To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
 
 ##   PROBLEM STATEMENT AND DATASET
-Include the Problem Statement and Dataset.
+Design and implement a Convolutional Neural Network (CNN) using PyTorch to classify grayscale images of clothing items into predefined categories.
+The model should be trained, evaluated, and used to predict the class of unseen images with good accuracy.
 
 ## Neural Network Model
-Include the neural network model diagram.
+
+<img width="1039" height="754" alt="image" src="https://github.com/user-attachments/assets/60b76dac-5d2c-49c3-a18f-35285600a6ce" />
+
 
 ## DESIGN STEPS
 ### STEP 1: 
@@ -153,15 +156,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name:        ')
-    print('Register Number:       ')
+    print('Name: Joshua Clement D')
+    print('Register Number: 212224040143')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name:        ')
-    print('Register Number:       ')
+    print('Name: Joshua Clement D')
+    print('Register Number: 212224040143')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -169,8 +172,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name:        ')
-    print('Register Number:       ')
+    print('Name: Joshua Clement D')
+    print('Register Number: 212224040143')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
